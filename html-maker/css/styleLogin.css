@@ -1,0 +1,99 @@
+body {
+  font-family: "Marvel", sans-serif;
+}
+
+input, label, textarea, button {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  outline: none;
+}
+
+button {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+article {
+  width: 80%;
+  display: block;
+  margin: 60px auto 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+form {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+@media screen and (max-width: 1000px) {
+  form {
+    width: 44%;
+  }
+}
+form input, form textarea, form select {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.btn-show-more {
+  margin: 0 auto;
+}
+
+.block-parcourir-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-parcourir-img img {
+  display: block;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.5s;
+}
+.block-parcourir-img img:hover {
+  transform: scale(1.1);
+}
+
+label[for=galerie-conf] {
+  margin-top: 60px;
+}
+
+#block-list-tags, #block-list-users {
+  margin-top: -30px;
+  display: flex;
+}
+#block-list-tags #p-list-users, #block-list-tags #p-list-tags, #block-list-users #p-list-users, #block-list-users #p-list-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#block-list-tags .removeUser, #block-list-tags .removeTag, #block-list-users .removeUser, #block-list-users .removeTag {
+  position: relative;
+  cursor: not-allowed;
+  border: 1px dashed black;
+  border-radius: 10px;
+  padding: 5px 15px 5px 5px;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+#block-list-tags .removeUser:after, #block-list-tags .removeTag:after, #block-list-users .removeUser:after, #block-list-users .removeTag:after {
+  position: absolute;
+  content: "X";
+  font-size: 10px;
+  line-height: 16px;
+  right: 5px;
+}
+#block-list-tags .removeUser:hover, #block-list-tags .removeTag:hover, #block-list-users .removeUser:hover, #block-list-users .removeTag:hover {
+  opacity: 0.8;
+  color: red;
+}
+
+/*# sourceMappingURL=styleLogin.css.map */

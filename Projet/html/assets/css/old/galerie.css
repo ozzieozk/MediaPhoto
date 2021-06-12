@@ -1,0 +1,15 @@
+body {
+  font-family: "Marvel", sans-serif;
+}
+
+article {
+  width: 80%;
+  display: block;
+  margin: 60px auto 0 auto;
+}
+
+.btn-show-more {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=galerie.css.map */

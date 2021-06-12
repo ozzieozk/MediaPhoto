@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Marvel:wght@300;400&display=swap" rel="stylesheet">
+  <title>ACCUEIL | MediaPhoto</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./css/utils.css">
+  <link rel="stylesheet" href="./css/styleLogin.css">
+</head>
+<body>
+  <datalist id="_tagSearch">
+  </datalist>
+  <header>
+    <nav>
+      <div class="nav-link">
+        <a href="#">POSTER UNE PHOTO</a>
+        <a href="#">Mes photos</a>
+      </div>
+      <a href="#">
+        <img class="logo" src="./img/logo.png" alt="MediaPhoto" />
+      </a>
+      <div class="nav-setting">
+        <a href="#"><img src="./img/setting.svg" alt="Paramètre"><p>Lucaas855</p></a>
+        <a href="#"><img src="./img/disconnect.svg" alt="Déconnexion"><p>Déconnexion</p></a>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Poster une photo</h1>
+  <hr style="width: 70%">
+
+  <form action="" method="POST">
+    <div class="block-parcourir-img" >
+      <label for="image-upload">Parcourir une image :</label>
+      <input style="display: none;" type="file" id="image-upload" name="image-upload" accept="image/png, image/jpeg, image/jpg">
+      <img src="./img/add.svg" alt="Parcourir"/>
+    </div>
+    <div>
+      <label for="galerie-name">Saisir un nom pour la photo :</label>
+      <input type="text" placeholder="Saisir nom..." name="galerie-name" id="galerie-name">
+    </div>
+    <div>
+      <label for="tag-add-textbox">Ajouter/retirer des tags :</label>
+      <div class="input-tb-submit tag-add-block">
+        <input type="text" id="tag-add-textbox" placeholder="SAISIR TAG..." list="_tagSearch"/>
+        <input type="button" id="tag-add-btn" value="AJOUTER" />
+        <input type="text" style="display: none;" id="input-tagList" name="list-tag" value="">
+      </div>
+      <div id="block-list-tags">
+        <p id="p-list-tags"></p>
+      </div>
+    </div>
+    <div>
+      <label for="galerie-conf">Sélectionner une galerie :</label>
+      <select id="galerie-conf" name="galerie-conf">
+        <option value="1">Horreur</option>
+        <option value="2">Film</option>
+        <option value="3">Flash</option>
+      </select>
+    </div>
+    <input name="submit" id="submit" type="submit" value="publier la photo"/>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script> window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>')</script>
+  <script src="./js/autosearch.js"></script>
+  <script type="text/javascript">
+    $('.block-parcourir-img img').click(function(){
+      $('#image-upload').click();
+    })
+  </script>
+</body>
+</html>

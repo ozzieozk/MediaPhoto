@@ -1,0 +1,78 @@
+@import "_vars.scss";
+@import "_lightbox.scss";
+
+body{
+  font-family: $body-font-family;
+}
+
+article{
+  width: $article-width;
+  display: block;
+  margin: $vertical-margin auto 0 auto;
+}
+
+.block-vignette{
+  justify-content: flex-start;
+}
+
+.picture-block{
+  .showing{
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+    .pic{
+      width: 100%;
+      margin-bottom: ($vertical-margin / 2);
+      cursor: pointer;
+    }
+    .left-arrow, .right-arrow{
+      width:80px;height: 80px;
+      @media screen and (max-width: 1000px){
+        width:50px;height: 50px;
+      }
+    }
+    .left-arrow{
+      position: absolute;
+      top: calc(50% - 40px);
+      left: -40px;
+      @media screen and (max-width: 1000px){
+        top: calc(50% - 25px);
+        left: -25px;
+      }
+      transition: transform 0.8s;
+      &:hover{
+        transform: translateX(-10px);
+      }
+    }
+    .right-arrow{
+      position: absolute;
+      top: calc(50% - 40px);
+      right: -40px;
+      @media screen and (max-width: 1000px){
+        top: calc(50% - 25px);
+        right: -25px;
+      }
+      transform: rotate(180deg);
+      transition: transform 0.8s;
+      &:hover{
+        transform: rotate(180deg) translateX(-10px);
+      }
+    }
+  }
+
+  .in-galerie{
+    p{
+      margin-bottom: $vertical-margin / 2;
+    }
+    .block-vignette{
+      border: 1px dashed rgba(black, 0.1);
+    }
+  }
+}
+
+.more-info-block{
+  p a{
+    color: black;
+
+  }
+}

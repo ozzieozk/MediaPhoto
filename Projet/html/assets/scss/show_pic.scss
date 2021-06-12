@@ -1,0 +1,61 @@
+@import "_vars.scss";
+@import "_lightbox.scss";
+
+body{
+  font-family: $body-font-family;
+}
+
+article{
+  width: $article-width;
+  display: block;
+  margin: $vertical-margin auto 0 auto;
+}
+
+.pictures-list{
+  .pictures{
+    margin: 0 auto;
+
+    img{
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      max-width: 100%;
+      min-width: 50%;
+      border: 2px solid rgba($primary-color, 0.5);
+      box-sizing: border-box;
+      transition: transform 0.7s, opacity 0.7s;
+
+      &:hover{
+        transform: scale(1.01);
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+footer{
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+  .block-pagination{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    & > *{
+      margin-right: $vertical-margin / 2;
+    }
+    .previous-page img{
+      width: 50px;
+      height: auto;
+    }
+    .actual-page{
+      font-family: 18px;
+      border-bottom: 1px solid rgba($primary-color, 0.5);
+    }
+    .next-page img{
+      width: 50px;
+      height: auto;
+      transform: rotate(180deg);
+    }
+  }
+}

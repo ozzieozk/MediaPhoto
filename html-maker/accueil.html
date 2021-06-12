@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Marvel:wght@300;400&display=swap" rel="stylesheet">
+  <title>ACCUEIL | MediaPhoto</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./css/utils.css">
+  <link rel="stylesheet" href="./css/accueil.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-link">
+        <a href="#">
+          <img src="./img/add-image.png" alt="Add">
+          <p>POSTER UNE PHOTO</p>
+        </a>
+        <a href="#">
+          <img src="./img/stack-image.png" alt="View">
+          <p>Mes photos</p>
+        </a>
+      </div>
+      <a href="#">
+        <img class="logo" src="./img/logo.png" alt="MediaPhoto" />
+      </a>
+      <div class="nav-setting">
+        <a href="#"><img src="./img/setting.svg" alt="Paramètre"><p>Lucaas855</p></a>
+        <a href="#"><img src="./img/disconnect.svg" alt="Déconnexion"><p>Déconnexion</p></a>
+      </div>
+    </nav>
+  </header>
+  <article class="block-search">
+    <h1>Bienvenue sur <strong>media photo</strong></h1>
+    <form class="form-search" action="" method="post">
+      <div class="input-tb-submit">
+        <input type="text" name="search" placeholder="Rechercher..."/>
+        <input type="submit" value="OK" />
+      </div>
+      <div class="form-select-filter">
+        <div class="checkbox-group">
+          <input checked type="checkbox" id="filter-image" name="filter" value="image">
+          <label for="filter-image">image</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="filter-galerie" name="filter" value="galerie">
+          <label for="filter-galerie">galerie</label>
+        </div>
+      </div>
+    </form>
+  </article>
+  <article id="content-galerie" class="content-block">
+    <h1>Liste de vos galeries</h1>
+    <div class="block-list">
+      <div class="card">
+        <a href="#">
+          <div class="card-body">
+            <img src="./img/anabelle.png" alt="Film d'horreur">
+            <p>Film d'horreur</p>
+          </div>
+        </a>
+        <div class="card-footer">
+          <p>4 PHOTOS - CRÉÉ PAR <a href="#">OzzieOZK</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="#">
+          <div class="card-body">
+            <img src="./img/dreamcar.png" alt="MES VOITURES DE RÊVE">
+            <p>MES VOITURES DE RÊVE</p>
+          </div>
+        </a>
+        <div class="card-footer">
+          <p>2 PHOTOS - CRÉÉ PAR <a href="#">VOUS</a></p>
+        </div>
+      </div>
+      <div class="card-add">
+        <a href="#" title="Créer galerie">
+          <img src="./img/add.svg" alt="Créer galerie"/>
+        </a>
+      </div>
+    </div>
+  </article>
+  <article id="content-last-post" class="content-block">
+    <h1>Dernières publications</h1>
+    <div class="block-vignette">
+      <a href="#">
+        <img src="./img/anabelle.png" alt="Anabelle"/>
+        <div class="card-footer">
+          <p>Anabelle</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/american_nightmare.png" alt="AMERICAN NIGHTMARE"/>
+        <div class="card-footer">
+          <p>AMERICAN NIGHTMARE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/telez.png" alt="Tele Z"/>
+        <div class="card-footer">
+          <p>Tele Z</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/TESLA.png" alt="TESLA"/>
+        <div class="card-footer">
+          <p>TESLA</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/BUGATTI.png" alt="BUGATTI"/>
+        <div class="card-footer">
+          <p>BUGATTI</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/AVENGERS.png" alt="AVANGERS"/>
+        <div class="card-footer">
+          <p>AVENGERS</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/FORTNIITE.png" alt="FORTNIITE"/>
+        <div class="card-footer">
+          <p>FORTNIITE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/ANABELLE.png" alt="ANABELLE"/>
+        <div class="card-footer">
+          <p>ANABELLE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/AVENGERS.png" alt="AVENGERS"/>
+        <div class="card-footer">
+          <p>AVENGERS</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+    </div>
+    <button class="btn-show-more">
+      VOIR PLUS
+      <img src="./img/right_arrow.svg" alt="Voir plus"/>
+    </button>
+  </article>
+  <article id="content-most-commented" class="content-block">
+    <h1>Les images les plus commentées</h1>
+    <div class="block-vignette">
+      <a href="#">
+        <img src="./img/anabelle.png" alt="Anabelle"/>
+        <div class="card-footer">
+          <p>Anabelle</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/american_nightmare.png" alt="AMERICAN NIGHTMARE"/>
+        <div class="card-footer">
+          <p>AMERICAN NIGHTMARE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/telez.png" alt="Tele Z"/>
+        <div class="card-footer">
+          <p>Tele Z</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/TESLA.png" alt="TESLA"/>
+        <div class="card-footer">
+          <p>TESLA</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/BUGATTI.png" alt="BUGATTI"/>
+        <div class="card-footer">
+          <p>BUGATTI</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/AVENGERS.png" alt="AVANGERS"/>
+        <div class="card-footer">
+          <p>AVENGERS</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/FORTNIITE.png" alt="FORTNIITE"/>
+        <div class="card-footer">
+          <p>FORTNIITE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/ANABELLE.png" alt="ANABELLE"/>
+        <div class="card-footer">
+          <p>ANABELLE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/AVENGERS.png" alt="AVENGERS"/>
+        <div class="card-footer">
+          <p>AVENGERS</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/FORTNIITE.png" alt="FORTNIITE"/>
+        <div class="card-footer">
+          <p>FORTNIITE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/AVENGERS.png" alt="AVENGERS"/>
+        <div class="card-footer">
+          <p>AVENGERS</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/FORTNIITE.png" alt="FORTNIITE"/>
+        <div class="card-footer">
+          <p>FORTNIITE</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+      <a href="#">
+        <img src="./img/Ca.png" alt="Ca"/>
+        <div class="card-footer">
+          <p>Ca</p>
+        </div>
+      </a>
+    </div>
+    <button class="btn-show-more">
+      VOIR PLUS
+      <img src="./img/right_arrow.svg" alt="Voir plus"/>
+    </button>
+  </article>
+  <br><br>
+  </body>
+  </html>

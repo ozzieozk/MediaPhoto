@@ -1,0 +1,116 @@
+.modal-open {
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+}
+.modal-open img {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+.modal-open .left, .modal-open .right {
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid black;
+  border-radius: 60px;
+  top: calc(50% - 25px);
+  cursor: pointer;
+  transform: opacity 0.7s;
+}
+.modal-open .left:hover, .modal-open .right:hover {
+  opacity: 0.8;
+}
+.modal-open .left {
+  left: 10%;
+}
+.modal-open .right {
+  right: 10%;
+}
+.modal-open .close {
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  transform: opacity 0.7s;
+}
+.modal-open .close:hover {
+  opacity: 0.8;
+}
+
+body {
+  font-family: "Marvel", sans-serif;
+}
+
+article {
+  width: 80%;
+  display: block;
+  margin: 60px auto 0 auto;
+}
+
+.pictures-list .pictures {
+  margin: 0 auto;
+}
+.pictures-list .pictures img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  min-width: 50%;
+  border: 2px solid rgba(22, 160, 133, 0.5);
+  box-sizing: border-box;
+  transition: transform 0.7s, opacity 0.7s;
+}
+.pictures-list .pictures img:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+footer .block-pagination {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+footer .block-pagination > * {
+  margin-right: 30px;
+}
+footer .block-pagination .previous-page img {
+  width: 50px;
+  height: auto;
+}
+footer .block-pagination .actual-page {
+  font-family: 18px;
+  border-bottom: 1px solid rgba(22, 160, 133, 0.5);
+}
+footer .block-pagination .next-page img {
+  width: 50px;
+  height: auto;
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=show_pic.css.map */

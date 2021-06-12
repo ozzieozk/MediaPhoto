@@ -1,0 +1,41 @@
+Site MediaPhoto du groupe 1 :
+
+- GEHIN Evann
+- PORTARO Lucas
+- OZKOK Ozzan
+- CARON Ludovic
+- KLOPFENSTEIN Vivien
+
+URL GIT : https://git.ezcorp.io/lp-ciasie/mediaphoto
+URL SITE HEBERGE : http://mediaphoto.ezcorp.fr/
+
+Le site n'est pas hébergé sur Webetu : lors du développement de MediaPhoto, nous avons utilisé de la syntaxe Heredoc (et autre) compatible >= PHP 7.3. Or Webetu est en PHP 7.0, il y a alors beaucoup d'erreurs de syntaxe.
+Le site est hébergé sur un serveur web Apache2 et PHP 7.3.
+
+Compte utilisateur avec galeries/photos :
+Nom d'utilisateur : lucaas855
+Mot de passe : azerty12
+
+Liste des fonctionnalités invité :
+- Connexion/Inscription
+- Liste des galeries
+- Liste des dernières publications
+- Barre de recherche (photos et/ou galeries)
+- Détail d'une galerie (nom, description, auteur, photos de la galerie et utilisateurs partagés si galerie partagée)
+- Détail d'une photo (auteur, galerie associée, taille de l'image en Ko, qualité, et format).
+
+Liste des fonctioannlités utilisateur :
+- Créer une galerie (nom, description, tags, confidentialité)
+- Poster une photo (upload de la photo, nom, tags, galerie associée)
+- Changement de mot de passe
+- Mes photos : voir la liste de toutes ses photos (la pagination n'est pas fonctionnelle par manque de temps).
+
+
+Concernant les formulaires tel que la connexion, l'inscription, le changement de mot de passe, poster une photo, créer une galerie : toutes les erreurs sont prises en charge et affiche une notification à l'utilisateur :
+- Si un ou plusieurs champs sont vides
+- Si les mots de passes ne correspondent pas
+- Si le nom d'utilisateur n'est pas disponible
+- Si le fichier uploadé n'est pas une image (et/ou extension non acceptée)
+- ...
+
+Le système de partage de galerie est pour le moment non finalisé : il est possible de partager une galerie à un utilisateur, la liaison sera faite en base de données, mais les conditions ne sont pas réalisées en PHP (manque de temps).

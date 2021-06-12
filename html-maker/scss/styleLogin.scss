@@ -1,0 +1,103 @@
+@import "_vars.scss";
+
+body{
+  font-family: $body-font-family;
+}
+
+input, label, textarea, button{
+  font-family: $input-font-family;
+  font-weight: 300;
+  outline: none;
+}
+
+button{
+    margin-bottom: $vertical-margin;
+    width: 100%;
+}
+
+article{
+  width: $article-width;
+  display: block;
+  margin: $vertical-margin auto 0 auto;
+}
+
+h1{
+  text-align: center;
+  margin-top: $vertical-margin;
+}
+
+form{
+    width: 25%;
+    @media screen and (max-width: 1000px){
+      width:44%;
+    }
+    margin: 0 auto;
+    margin-top: 2em;
+    input, textarea, select{
+        display: block;
+        margin-top: $vertical-margin / 2;
+        margin-bottom: $vertical-margin / 2;
+        width: 100%;
+    }
+}
+
+.btn-show-more{
+  margin: 0 auto;
+}
+
+.block-parcourir-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    display: block;
+    cursor: pointer;
+    margin-top: $vertical-margin / 2;
+    margin-bottom: $vertical-margin / 2;
+    transition: transform 0.5s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+label[for="galerie-conf"]{
+  margin-top: $vertical-margin;
+}
+
+#block-list-tags, #block-list-users{
+  margin-top: ($vertical-margin / 2) * -1;
+  display: flex;
+  #p-list-users, #p-list-tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .removeUser, .removeTag
+  {
+    position: relative;
+  	cursor: not-allowed;
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding: 5px 15px 5px 5px;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    &:after{
+      position: absolute;
+      content: 'X';
+      font-size: 10px;
+      line-height: 16px;
+      right: 5px;
+    }
+  }
+
+  .removeUser:hover, .removeTag:hover
+  {
+  	opacity: 0.8;
+  	color: red;
+  }
+}

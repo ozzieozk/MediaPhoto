@@ -1,0 +1,84 @@
+input[type="text"], input[type="password"], input[type="number"]{
+  font-size: 14px;
+  font-family: $input-font-family;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+
+  &::placeholder{
+    color: rgba($primary-color, 0.5);
+  }
+}
+textarea{
+  font-size: 14px;
+  font-family: $input-font-family;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+  width: 100%;
+
+  &::placeholder{
+    color: rgba($primary-color, 0.5);
+  }
+}
+select{
+  font-size: 14px;
+  font-family: $input-font-family;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+}
+input[type="submit"], input[type="button"], button{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $input-font-family;
+  font-weight: 300;
+  color: white;
+  background-color: rgba($primary-color, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: background-color 0.3s;
+  &:hover{
+    background-color: rgba($primary-color, 0.6);
+  }
+}
+
+input[type="checkbox"]{
+  border: 1px solid rgba($primary-color, 0.5);
+  border-radius: 0;
+  width: 15px;height: 15px;
+  appearance: none;
+  padding: 0;
+  margin: 0px 10px 0 0;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &:checked{
+    appearance: none;
+    color: rgba($primary-color, 0.5);
+    position: relative;
+
+    &::before{
+      content: 'X';
+      font-size: 14px;
+      color: rgba($primary-color, 0.5);
+      width: 15px;height: 15px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 0;left:0;
+    }
+  }
+}

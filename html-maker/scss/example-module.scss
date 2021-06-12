@@ -1,0 +1,15 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+@import "_vars.scss";
+
+@import "_elements.scss";
+@import "utils.scss";
+
+body{
+  width: 80%;
+  padding: 100px;
+
+  & > *{
+    display: block;
+    margin: 15px auto;
+  }
+}

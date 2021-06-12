@@ -1,0 +1,15 @@
+@import "_vars.scss";
+
+body{
+  font-family: $body-font-family;
+}
+
+article{
+  width: $article-width;
+  display: block;
+  margin: $vertical-margin auto 0 auto;
+}
+
+.btn-show-more{
+  margin: 0 auto;
+}
